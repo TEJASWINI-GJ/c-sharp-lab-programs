@@ -1,4 +1,69 @@
-﻿/*using System;
+﻿
+
+using System;
+
+
+namespace studentdetails
+{
+    class details
+    {
+
+
+        public static void Main(string[] args)
+        {
+            string userinput;
+            string Uid;
+            string Name;
+            int Sem;
+            string Email;
+
+            Console.Write("Enter Uid: ");
+            userinput = Console.ReadLine();
+            Uid = Convert.ToString(userinput);
+            Console.WriteLine("You entered Uid :{0}", Uid);
+
+            Console.Write("Enter Name: ");
+            userinput = Console.ReadLine();
+            Name = Convert.ToString(userinput);
+            Console.WriteLine("You entered Name: {0}", Name);
+
+            try
+            {
+
+                Console.Write("Enter Sem: ");
+                userinput = Console.ReadLine();
+                Sem = Convert.ToInt32(userinput);
+                Console.WriteLine("You entered Sem: {0}", Sem);
+            }
+            catch
+            {
+                Console.WriteLine("invalid input!! try again");
+            }
+
+
+            try
+            {
+
+                Console.Write("Enter Email: ");
+                userinput = Console.ReadLine();
+                Email = Convert.ToString(userinput);
+                Console.WriteLine("You entered Email: {^[A-Z]+@[a-z]+.[a-z]} is {^[A-Z]+@[a-z]+.[a-z]}", Email);
+
+            }
+
+
+            catch (Exception )
+            {
+                Console.WriteLine("invalid email");
+                Console.WriteLine("try again");
+            }
+
+            Console.ReadLine();
+        }
+    }
+}
+
+/*using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -31,10 +96,7 @@ namespace studentdetails
 
         {
 
-            Console.WriteLine("Name....." + Name);
-            Console.WriteLine("My Semister  is...." + semister);
-            Console.WriteLine("My Campus  is.... " + Campus);
-
+        
         }
         
 
@@ -45,13 +107,7 @@ namespace studentdetails
     {
         static void Main(string[] args)
         {
-            string FiName = "";
-            string Laname = "";
-            string FName = "";
-            string Addr = "";
-            string Gend = "";
-            string Ema = "";
-
+           
             DisplayData obj = new DisplayData(FiName, Laname, FName, Addr, Gend, Ema);
 
             //DisplayData ob = new DisplayData();
@@ -65,17 +121,7 @@ namespace studentdetails
 
 
 }*/
-using System;
 
-namespace student
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.Write("Enter your Uid:\n ");
-           // Uid = Console.ReadLine();
-            Console.WriteLine("enter your Name:\n");
-            Console.WriteLine("enter your sem\n");
-            Console.WriteLine("enter your email\n");
-            
+
+
+
