@@ -14,9 +14,9 @@ namespace person_info
         private string emailadd;
         private DateTime dob;
        
-       /* public person()
+        public person()
             {
-            }*/
+            }
         
 
         public person(string fname, string lname, string emailadd, DateTime dob)
@@ -194,7 +194,7 @@ namespace person_info
         }
     }
 
-  /*  interface Ipayable
+   interface Ipayable
     {
         double RetriveDueAmount();
         void AddToDueAmount(int dueamount);
@@ -241,12 +241,12 @@ namespace person_info
         {
             return dueamount;
         }
-    }*/
+    }
     class Program
     {
         static void Main(string[] args)
         {
-            string fname, lname, email, dob;
+          /*  string fname, lname, email, dob;
 
             Console.WriteLine("enter first name:");
             fname= Console.ReadLine();
@@ -265,14 +265,14 @@ namespace person_info
              Console.WriteLine("the person is an adult ?:" + p1.adult);
              Console.WriteLine("the sunsign:" + p1.sunsign);
              Console.WriteLine("today is your birthday ?:" + p1.birthday);
-             Console.WriteLine("the allotted screenname:" + p1.ScreenName);
+             Console.WriteLine("the allotted screenname:" + p1.ScreenName);*/
 
             //employee class related
-          /*  Employee e1 = new Employee("teju","gowda","teju@gmail.com",500000,2411,"doddaballapur");
+            Employee e1 = new Employee("teju","gowda","teju@gmail.com",500000,2411,"doddaballapur");
             Console.WriteLine("salary:" + e1.Salary);
             Console.WriteLine(e1.ScreenName);
             Console.WriteLine(e1.Mailingaddress);
-          */
+          
             Console.ReadLine();
             
         }
