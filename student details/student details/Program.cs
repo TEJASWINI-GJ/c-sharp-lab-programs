@@ -7,10 +7,9 @@ namespace studentdetails
 {
     class details
     {
-       // private static bool isCorrect;
-
         public static void Main(string[] args)
         {
+
             string userinput;
             string Uid;
             string Name;
@@ -40,133 +39,59 @@ namespace studentdetails
                 Console.WriteLine("invalid input!! try again");
             }
 
-
-
-            try
+            Console.Write("Enter Email: ");
+            userinput = Console.ReadLine();
+            Email = Convert.ToString(userinput);
+            if (IsValidEmail(Email))
             {
-
-                Console.Write("Enter Email: ");
-                userinput = Console.ReadLine();
-                Email = Convert.ToString(userinput);
-                bool isCorrect = Regex.IsMatch(Email, @"\A(?:[a-z0-9!#$%&'+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'+/=?^_`{|}~-]+)@(?:[a-z0-9](?:[a-z0-9-][a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)\Z", RegexOptions.IgnoreCase);
-                Console.WriteLine("You entered Email: {0}", Email);
-
+                Console.WriteLine("valid email address");
             }
-            catch (Exception)
-            {
-                Console.WriteLine("invalid!!" + "try again");
-            }
-
+            else
+                Console.WriteLine("invalid email address");
             Console.ReadLine();
         }
-    }
-}
 
-                
+            public static bool IsValidEmail(string email)
+            {
+                if (string.IsNullOrWhiteSpace(email))
+                    return false;
 
-
-
-
-
-
-
-
-
-
-
-
+                if (Regex.IsMatch(email,
+                        @"^[^@\s]+@[^@\s]+\.[^@\s]+$",
+                        RegexOptions.IgnoreCase, TimeSpan.FromMilliseconds(250)))
+                {
+                    return true;
+                }
+                else
+                    return false;
 
 
-
-
-
-
-
-
-
-
-/*using System;
-using System.Threading;
-
-public class Details
-{
-    public void Readdata(string Uid, string Name, int Sem, string Email)
-    {
-        Console.WriteLine("Ur uid:" + Uid + "!");
-        Console.WriteLine("Ur name:" + Name + " !");
-        Console.WriteLine("ur sem:" + Sem + "!");
-        Console.WriteLine("ur email:" + Email + "!");
+              
+            }
+        }
     }
 
-     public static void HaveAnice()
-   {
-       Console.WriteLine("Have a nice day!");
-   }
 
-   public static void Main(string[] args)
-   {
+            
 
 
-       string myUid;
-       string myName;
-       int mySem;
-       string myEmail;
-
-       Console.Write("Enter Uid: ");
-       myUid = Console.ReadLine();
-        Readdata(myUid);
-
-       Console.Write("Enter Name: ");
-       myName = Console.ReadLine();
-        Readdata(myName);
-
-       try
-       {
-
-           Console.Write("Enter Sem: ");
-           mySem = Convert.ToInt32(Console.ReadLine());
-            Readdata(mySem);
-
-       }
-       catch
-       {
-           Console.WriteLine("invalid input!! try again");
-       }
 
 
-       try
-       {
-
-           Console.Write("Enter Email: ");
-           myEmail = Console.ReadLine();
-            Readdata(myEmail);
 
 
-       }
 
 
-       catch (Exception)
-       {
-           Console.WriteLine("invalid email");
-           Console.WriteLine("try again");
-       }
 
 
-       HaveAnice();
 
 
-       Console.ReadLine();
-   }
 
-    private static void Readdata(int mySem)
-    {
-       
-    }
 
-    private static void Readdata(string myName)
-    {
-        
-    }
-}
 
-*/
+
+
+
+
+
+
+
