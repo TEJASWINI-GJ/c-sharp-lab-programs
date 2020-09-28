@@ -114,10 +114,10 @@ namespace GUI_app2
 
         private string GetSelection()
         {
-           
-                if (engg_radioButton.Checked)
-                {
 
+            if (engg_radioButton.Checked)
+            {
+                {
                     if (cse_radioButton.Checked)
                         return "CSE";
                     else if (civil_radioButton.Checked)
@@ -129,16 +129,23 @@ namespace GUI_app2
                     else if (petro_radioButton.Checked)
                         return "Petroleum";
 
+
+
                     else
                         return "No branch is selected";
                 }
-                else
-                    return "null";
-            
+            }
+            else
+                return "null";
+
+
+
+
+
         }
           
 
-                if (law_radioButton.Checked)
+               /* if (law_radioButton.Checked)
                 {
 
                     if (llb_radioButton.Checked)
@@ -148,14 +155,10 @@ namespace GUI_app2
                     else if (mbl_radioButton.Checked)
                         return "M.Bussiness Law";
                     else if (dtl_radioButton.Checked)
-                        return "DTL";
+                        return "DTL";*/
 
 
-                    else
-                        return "No branch is selected";
-                }
-                else
-                    return "null";
+                 
 
            
 
