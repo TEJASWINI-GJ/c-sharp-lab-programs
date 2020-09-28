@@ -110,59 +110,94 @@ namespace GUI_app2
 
             string selectedCourse = GetSelection();
             MessageBox.Show("you have applied/choosen " + selectedCourse, "Congragulations", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
         }
 
         private string GetSelection()
         {
 
+
             if (engg_radioButton.Checked)
             {
-                {
-                    if (cse_radioButton.Checked)
-                        return "CSE";
-                    else if (civil_radioButton.Checked)
-                        return "Civil";
-                    else if (mech_radioButton.Checked)
-                        return "Mechanical";
-                    else if (comm_radioButton.Checked)
-                        return "Communication";
-                    else if (petro_radioButton.Checked)
-                        return "Petroleum";
+
+                if (cse_radioButton.Checked)
+                    return "CSE";
+                else if (civil_radioButton.Checked)
+                    return "Civil";
+                else if (mech_radioButton.Checked)
+                    return "Mechanical";
+                else if (comm_radioButton.Checked)
+                    return "Communication";
+                else if (petro_radioButton.Checked)
+                    return "Petroleum";
 
 
 
-                    else
-                        return "No branch is selected";
-                }
+                else
+                    return "none of the option is Selected";
+
+
             }
+            else if (law_radioButton.Checked)
+            {
+                if (llb_radioButton.Checked)
+                    return "LL.b";
+                else if (llm_radioButton.Checked)
+                    return "LL.m";
+                else if (mbl_radioButton.Checked)
+                    return "M.Bussiness Law";
+                else if (dtl_radioButton.Checked)
+                    return "DTL";
+                else
+                    return "not selected";
+            }
+
+            else if (mba_radioButton.Checked)
+            {
+                if (finance_radioButton.Checked)
+                    return "Finance";
+                else if (hrm_radioButton.Checked)
+                    return "HRM";
+                else if (it_radioButton.Checked)
+                    return "IT";
+                else if (mm_radioButton.Checked)
+                    return "Market Management";
+                else
+                    return "not selected";
+            }
+
+            else if (bca_radioButton.Checked)
+            {
+                if (c_radioButton.Checked)
+                    return "C_Language";
+                else if (ds_radioButton.Checked)
+                    return "Data Structure";
+                else if (dbms_radioButton.Checked)
+                    return "DBMS";
+                else if (pm_radioButton.Checked)
+                    return "PM";
+                else
+                    return "not selected";
+            }
+
             else
-                return "null";
+                return null; 
 
+               
 
-
-
-
+       
+            
         }
-          
-
-               /* if (law_radioButton.Checked)
-                {
-
-                    if (llb_radioButton.Checked)
-                        return "LL.B";
-                    else if (llm_radioButton.Checked)
-                        return "LL.M";
-                    else if (mbl_radioButton.Checked)
-                        return "M.Bussiness Law";
-                    else if (dtl_radioButton.Checked)
-                        return "DTL";*/
+    
 
 
-                 
 
-           
 
-        private void radioButton4_CheckedChanged_1(object sender, EventArgs e)
+
+
+
+
+            private void radioButton4_CheckedChanged_1(object sender, EventArgs e)
         {
 
         }

@@ -26,7 +26,7 @@ namespace GUI_app2
         {
             string userName = this.user_Name_textBox.Text;
             string password = this.password_textBox.Text;
-            if (userName.Equals("sunil") && password.Equals("sunil"))
+            if (userName.Equals("Gubbi") && password.Equals("Anuroopa"))
             {
                 Selection mySelection = new Selection();
                 this.Hide();
@@ -39,6 +39,11 @@ namespace GUI_app2
         }
 
         private void password_textBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void user_Name_label_Click(object sender, EventArgs e)
         {
 
         }
