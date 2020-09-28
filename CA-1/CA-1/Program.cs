@@ -122,7 +122,7 @@ namespace CA_1
             static void Main(string[] args)
             {
             Minivan minivan = new Minivan("a", "swift", 20000, 2001);
-            SchoolBus schoolbus = new SchoolBus("b", "omini", 1894, 500000);
+            SchoolBus schoolbus = new SchoolBus("b", "omini", 1894, 5000000);
 
             Console.WriteLine("MINIVAN INFO");
             Console.WriteLine("price info");
