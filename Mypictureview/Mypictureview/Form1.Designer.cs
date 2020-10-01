@@ -36,6 +36,8 @@
             this.clearPicture_button = new System.Windows.Forms.Button();
             this.backgroundColor_button = new System.Windows.Forms.Button();
             this.close_Button = new System.Windows.Forms.Button();
+            this.previous_button = new System.Windows.Forms.Button();
+            this.next_button = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.tableLayoutPanel1.SuspendLayout();
@@ -54,9 +56,10 @@
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90.72643F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.27357F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1277, 681);
             this.tableLayoutPanel1.TabIndex = 0;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
@@ -68,14 +71,15 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1271, 606);
+            this.pictureBox1.Size = new System.Drawing.Size(1271, 581);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // stretch_checkBox
             // 
             this.stretch_checkBox.AutoSize = true;
-            this.stretch_checkBox.Location = new System.Drawing.Point(3, 615);
+            this.stretch_checkBox.Location = new System.Drawing.Point(3, 590);
             this.stretch_checkBox.Name = "stretch_checkBox";
             this.stretch_checkBox.Size = new System.Drawing.Size(73, 21);
             this.stretch_checkBox.TabIndex = 1;
@@ -89,11 +93,13 @@
             this.flowLayoutPanel1.Controls.Add(this.clearPicture_button);
             this.flowLayoutPanel1.Controls.Add(this.backgroundColor_button);
             this.flowLayoutPanel1.Controls.Add(this.close_Button);
+            this.flowLayoutPanel1.Controls.Add(this.previous_button);
+            this.flowLayoutPanel1.Controls.Add(this.next_button);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(194, 615);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(194, 590);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1080, 63);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1080, 54);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
             // showPicture_button
@@ -141,6 +147,26 @@
             this.close_Button.UseVisualStyleBackColor = true;
             this.close_Button.Click += new System.EventHandler(this.button4_Click);
             // 
+            // previous_button
+            // 
+            this.previous_button.Location = new System.Drawing.Point(254, 3);
+            this.previous_button.Name = "previous_button";
+            this.previous_button.Size = new System.Drawing.Size(156, 27);
+            this.previous_button.TabIndex = 4;
+            this.previous_button.Text = "previous";
+            this.previous_button.UseVisualStyleBackColor = true;
+            this.previous_button.Click += new System.EventHandler(this.previous_button_Click);
+            // 
+            // next_button
+            // 
+            this.next_button.Location = new System.Drawing.Point(92, 3);
+            this.next_button.Name = "next_button";
+            this.next_button.Size = new System.Drawing.Size(156, 27);
+            this.next_button.TabIndex = 3;
+            this.next_button.Text = "next";
+            this.next_button.UseVisualStyleBackColor = true;
+            this.next_button.Click += new System.EventHandler(this.next_button_Click_1);
+            // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
@@ -177,6 +203,8 @@
         private System.Windows.Forms.Button close_Button;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.Button previous_button;
+        private System.Windows.Forms.Button next_button;
     }
 }
 
