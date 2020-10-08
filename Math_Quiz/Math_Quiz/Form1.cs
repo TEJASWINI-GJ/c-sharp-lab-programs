@@ -28,12 +28,15 @@ namespace Math_Quiz
         int div1;
         int div2;
 
+        private Color timeLabelColor;
+
         int timeleft;
 
        
 
         public void StartTheQuiz()
         {
+            time_Label.BackColor = timeLabelColor;
             // Fill in the addition problem.
             // Generate two random numbers to add.
             // Store the values in the variables 'addend1' and 'addend2'.
@@ -65,8 +68,8 @@ namespace Math_Quiz
 
 
             // Start the timer.
-            timeleft = 50;
-            time_Label.Text = "50 seconds";
+            timeleft = 15;
+            time_Label.Text = "15 seconds";
             timer.Start();
         }
 
@@ -90,7 +93,7 @@ namespace Math_Quiz
         }
 
 
-        private void label2_Click(object sender , EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
@@ -120,6 +123,11 @@ namespace Math_Quiz
                 // by updating the Time Left label.
                 timeleft = timeleft - 1;
                 time_Label.Text = timeleft + " seconds";
+                if (timeleft <= 10)
+                {
+                    time_Label.BackColor = Color.Red;
+                    
+                }  
             }
             else 
             {
@@ -138,6 +146,7 @@ namespace Math_Quiz
                 divide_NumericUpDown.Value = div1 / div2;
                 
                 start_Button.Enabled = true;
+                time_Label.BackColor = timeLabelColor;
             }
 
         }
