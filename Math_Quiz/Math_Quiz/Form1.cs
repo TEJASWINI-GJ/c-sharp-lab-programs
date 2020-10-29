@@ -90,6 +90,7 @@ namespace Math_Quiz
         public mathQuiz_Form()
         {
             InitializeComponent();
+            
         }
 
 
