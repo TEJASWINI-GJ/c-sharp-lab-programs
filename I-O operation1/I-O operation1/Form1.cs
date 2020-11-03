@@ -75,7 +75,7 @@ namespace I_O_operation1
             }
             catch (Exception e2)
             {
-                MessageBox.Show(e2.Message, "ERROR");
+                MessageBox.Show(e2.Message, "Error Occured");
             }
             finally
             {
