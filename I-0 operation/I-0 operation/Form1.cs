@@ -60,7 +60,7 @@ namespace I_0_operation
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //MessageBox.Show(listBox1.SelectedItem.ToString());
+            MessageBox.Show(listBox1.SelectedItem.ToString());
                 String selectedItem=listBox1.SelectedItem.ToString();
 
                   if (listBox1.SelectedItem.ToString() == @"C:\")
