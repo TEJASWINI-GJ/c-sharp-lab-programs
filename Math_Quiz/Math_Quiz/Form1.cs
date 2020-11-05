@@ -68,8 +68,8 @@ namespace Math_Quiz
 
 
             // Start the timer.
-            timeleft = 15;
-            time_Label.Text = "15 seconds";
+            timeleft = 120;
+            time_Label.Text = "120 seconds";
             timer.Start();
         }
 
