@@ -26,7 +26,8 @@ namespace searching
             for (int i = listBox1.Items.Count - 1; i >= 0; i--)
             {
                 if (listBox1.Items[i].ToString().ToLower().Contains(Search_textBox.Text.ToLower()))
-              // if(listBox1.Items[i].ToString().Contains(Search_textBox.Text))
+              
+                    //if(listBox1.Items[i].ToString().Contains(Search_textBox.Text))
 
                 {
                     listBox1.SetSelected(i, true);
