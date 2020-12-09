@@ -44,6 +44,8 @@
             this.Update_button = new System.Windows.Forms.Button();
             this.Delete_button = new System.Windows.Forms.Button();
             this.Clear_button = new System.Windows.Forms.Button();
+            this.Search_button = new System.Windows.Forms.Button();
+            this.Search_textBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.Age_numericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Student_dataGridView)).BeginInit();
             this.SuspendLayout();
@@ -183,6 +185,7 @@
             this.Update_button.TabIndex = 13;
             this.Update_button.Text = "Update";
             this.Update_button.UseVisualStyleBackColor = true;
+            this.Update_button.Click += new System.EventHandler(this.Update_button_Click);
             // 
             // Delete_button
             // 
@@ -192,6 +195,7 @@
             this.Delete_button.TabIndex = 14;
             this.Delete_button.Text = "Delete";
             this.Delete_button.UseVisualStyleBackColor = true;
+            this.Delete_button.Click += new System.EventHandler(this.Delete_button_Click);
             // 
             // Clear_button
             // 
@@ -201,12 +205,33 @@
             this.Clear_button.TabIndex = 15;
             this.Clear_button.Text = "Clear";
             this.Clear_button.UseVisualStyleBackColor = true;
+            this.Clear_button.Click += new System.EventHandler(this.Clear_button_Click);
+            // 
+            // Search_button
+            // 
+            this.Search_button.Location = new System.Drawing.Point(101, 336);
+            this.Search_button.Name = "Search_button";
+            this.Search_button.Size = new System.Drawing.Size(111, 33);
+            this.Search_button.TabIndex = 16;
+            this.Search_button.Text = "Search";
+            this.Search_button.UseVisualStyleBackColor = true;
+            this.Search_button.Click += new System.EventHandler(this.Search_button_Click);
+            // 
+            // Search_textBox
+            // 
+            this.Search_textBox.Location = new System.Drawing.Point(307, 336);
+            this.Search_textBox.Multiline = true;
+            this.Search_textBox.Name = "Search_textBox";
+            this.Search_textBox.Size = new System.Drawing.Size(120, 33);
+            this.Search_textBox.TabIndex = 17;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1270, 450);
+            this.Controls.Add(this.Search_textBox);
+            this.Controls.Add(this.Search_button);
             this.Controls.Add(this.Clear_button);
             this.Controls.Add(this.Delete_button);
             this.Controls.Add(this.Update_button);
@@ -250,6 +275,8 @@
         private System.Windows.Forms.Button Update_button;
         private System.Windows.Forms.Button Delete_button;
         private System.Windows.Forms.Button Clear_button;
+        private System.Windows.Forms.Button Search_button;
+        private System.Windows.Forms.TextBox Search_textBox;
     }
 }
 
