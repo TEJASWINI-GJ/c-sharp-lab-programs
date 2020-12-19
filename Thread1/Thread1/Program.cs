@@ -38,7 +38,7 @@ namespace Thread1
             MyThread demoThread = new MyThread();
 
             //Thread Creation
-           /* Thread thread1 = new Thread(new ThreadStart(demoThread.Thread1Method));
+            Thread thread1 = new Thread(new ThreadStart(demoThread.Thread1Method));
              Thread1.Name = "Thread1";
             Thread thread2 = new Thread(new ThreadStart(demoThread.Thread2Method));
             Thread2.Name = "Thread2";
@@ -51,7 +51,7 @@ namespace Thread1
             
             //after starting both the thread the main thread will continue
             thread1.Join();
-            thread2.Join();*/
+            thread2.Join();
 
            // ThreadPool.QueueUserWorkItem(demoThread.Thread1Method);
            // ThreadPool.QueueUserWorkItem(demoThread.Thread2Method);
@@ -60,3 +60,4 @@ namespace Thread1
         }
     }
 }
+

@@ -9,10 +9,12 @@ namespace Sum_Thread
 {
     class MyThread
     {
-        private int sum, sum1;
+       private int sum, sum1;
 
         public int Sum { get => sum; }
         public int Sum1 { get => sum1; }
+ 
+        
 
         public void Sum_Thread1Method() //(object data) :parameter
         {
