@@ -82,7 +82,7 @@ namespace library
 
                 SqlCommand cmd = con.CreateCommand();
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "insert into Issue_book values('" + Enrolment_textBox.Text + "','" + Sname_textBox.Text + "','" + Dept_textBox.Text + "','" + Sem_textBox.Text + "','" + Contact_textBox.Text + "','" + Email_textBox.Text + "','" + Bname_textBox.Text + "','" + dateTimePicker1.Value.ToString() + "')";
+                cmd.CommandText = "insert into Issue_book values('" + Enrolment_textBox.Text + "','" + Sname_textBox.Text + "','" + Dept_textBox.Text + "','" + Sem_textBox.Text + "','" + Contact_textBox.Text + "','" + Email_textBox.Text + "','" + Bname_textBox.Text + "','" + dateTimePicker1.Value.ToString() + "','')";
                 cmd.ExecuteNonQuery();
 
 
