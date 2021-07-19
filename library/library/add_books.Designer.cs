@@ -54,6 +54,7 @@
             this.Author_TextBox.Name = "Author_TextBox";
             this.Author_TextBox.Size = new System.Drawing.Size(226, 22);
             this.Author_TextBox.TabIndex = 1;
+            this.Author_TextBox.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.Author_TextBox_MaskInputRejected);
             // 
             // Price_TextBox
             // 
@@ -130,6 +131,7 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
             this.dateTimePicker1.TabIndex = 11;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // add_books
             // 
@@ -149,6 +151,7 @@
             this.Controls.Add(this.Name_textBox);
             this.Name = "add_books";
             this.Text = "add_books";
+            this.Load += new System.EventHandler(this.add_books_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

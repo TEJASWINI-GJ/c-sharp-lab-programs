@@ -24,15 +24,30 @@ namespace library
             con.Open();
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "Insert into Books_info values('"+ Name_textBox.Text +"','"+Author_TextBox.Text+"','"+dateTimePicker1.Text+"',"+Price_TextBox.Text+","+Quantity_TextBox.Text+","+ Quantity_TextBox.Text +")";
+            cmd.CommandText = "Insert into Books_info values('"+ Name_textBox.Text +"','"+Author_TextBox.Text+"','"+ dateTimePicker1.Text+ "',"+Price_TextBox.Text+","+Quantity_TextBox.Text+ ","+Quantity_TextBox.Text + ")";
             cmd.ExecuteNonQuery();
             con.Close();
-
             Name_textBox.Text = "";
             Author_TextBox.Text = "";
+
             Price_TextBox.Text = "";
             Quantity_TextBox.Text = "";
             MessageBox.Show("Insertion Successfull");
+        }
+
+        private void add_books_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Author_TextBox_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
         }
     }
 }

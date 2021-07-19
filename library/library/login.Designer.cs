@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.username_label = new System.Windows.Forms.Label();
-            this.Password_label = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.login_button = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.login_button = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.Password_label = new System.Windows.Forms.Label();
+            this.username_label = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,47 +54,15 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // username_label
+            // label1
             // 
-            this.username_label.AutoSize = true;
-            this.username_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.username_label.Location = new System.Drawing.Point(82, 129);
-            this.username_label.Name = "username_label";
-            this.username_label.Size = new System.Drawing.Size(139, 31);
-            this.username_label.TabIndex = 0;
-            this.username_label.Text = "Username";
-            // 
-            // Password_label
-            // 
-            this.Password_label.AutoSize = true;
-            this.Password_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Password_label.Location = new System.Drawing.Point(82, 199);
-            this.Password_label.Name = "Password_label";
-            this.Password_label.Size = new System.Drawing.Size(134, 31);
-            this.Password_label.TabIndex = 1;
-            this.Password_label.Text = "Password";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(322, 8);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 17);
-            this.label3.TabIndex = 2;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(240, 138);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(175, 22);
-            this.textBox1.TabIndex = 3;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(240, 209);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(175, 22);
-            this.textBox2.TabIndex = 4;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(176, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(158, 31);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Login_Form";
             // 
             // login_button
             // 
@@ -107,15 +75,48 @@
             this.login_button.UseVisualStyleBackColor = true;
             this.login_button.Click += new System.EventHandler(this.login_button_Click);
             // 
-            // label1
+            // textBox2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(176, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(158, 31);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Login_Form";
+            this.textBox2.Location = new System.Drawing.Point(240, 209);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(175, 22);
+            this.textBox2.TabIndex = 4;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(240, 138);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(175, 22);
+            this.textBox1.TabIndex = 3;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(322, 8);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 17);
+            this.label3.TabIndex = 2;
+            // 
+            // Password_label
+            // 
+            this.Password_label.AutoSize = true;
+            this.Password_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Password_label.Location = new System.Drawing.Point(82, 199);
+            this.Password_label.Name = "Password_label";
+            this.Password_label.Size = new System.Drawing.Size(134, 31);
+            this.Password_label.TabIndex = 1;
+            this.Password_label.Text = "Password";
+            // 
+            // username_label
+            // 
+            this.username_label.AutoSize = true;
+            this.username_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.username_label.Location = new System.Drawing.Point(82, 129);
+            this.username_label.Name = "username_label";
+            this.username_label.Size = new System.Drawing.Size(139, 31);
+            this.username_label.TabIndex = 0;
+            this.username_label.Text = "Username";
             // 
             // login
             // 
